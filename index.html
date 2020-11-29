@@ -1,0 +1,60 @@
+<html>
+
+<head>
+
+<title>Olympic Logo</title>
+
+</head>
+
+<body class="body_background">
+
+<center>
+
+<h1>My Olympic Logo</h1>
+<canvas id="myCanvas" width="600" height="800"></canvas>
+
+</center>
+
+<script>
+
+canvas=document.getElementById("myCanvas");
+ctx=canvas.getContext("2d");
+
+ctx.beginPath();
+ctx.strokeStyle="grey";
+ctx.lineWidth=4;
+ctx.rect(130, 130, 400, 200);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle="blue";
+ctx.arc(240, 200, 35, 0, 360);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle="red";
+ctx.arc(320, 200, 35, 0, 360);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle="black";
+ctx.arc(400, 200, 35, 0, 360);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle="green";
+ctx.arc(280, 230, 35, 0, 360);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle="yellow";
+ctx.arc(360, 230, 35, 0, 360);
+ctx.stroke();
+
+console.log("myCanvas");
+
+</script>
+
+</body>
+
+</html>
